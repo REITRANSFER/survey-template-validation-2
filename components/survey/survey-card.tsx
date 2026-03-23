@@ -394,6 +394,7 @@ export function SurveyCard({ phoneDisplay = "(800) 000-0000", phoneHref = "80000
               value={surveyData.address}
               onChange={(address) => { setSurveyData({ ...surveyData, address }); setAddressVerified(false) }}
               onSelect={handleAddressSelect}
+              onReject={() => { setSurveyData({ ...surveyData, address: "" }); setAddressVerified(false) }}
               placeholder="Start typing your address..."
             />
           </div>
