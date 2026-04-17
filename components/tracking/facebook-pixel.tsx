@@ -42,7 +42,6 @@ export function FacebookPixel() {
     )
 
     window.fbq("init", FB_PIXEL_ID)
-    window.fbq("track", "PageView")
   }, [])
 
   useEffect(() => {
